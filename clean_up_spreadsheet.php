@@ -7,7 +7,7 @@
 		$json = $json["feed"]["entry"];
 
 		foreach($json as $key=>$value){
-    		 	$temp_obj = "";
+            $temp_obj=new stdClass();
 
 			foreach($value as $key2=>$value2){
 				   if (preg_match_all("/gsxx/",$key2)==1){
