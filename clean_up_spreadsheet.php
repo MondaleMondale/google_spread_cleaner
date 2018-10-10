@@ -1,4 +1,8 @@
 <?php
+
+        header("Access-Control-Allow-Origin: *");
+    	header('Content-Type: application/json');
+
 		$cleaned_json = [];
 		$jsonurl = "https://spreadsheets.google.com/feeds/list/" .  $_GET['id'] .  "/od6/public/values?alt=json";
 		$tempjson = file_get_contents($jsonurl);
