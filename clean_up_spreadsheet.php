@@ -16,7 +16,18 @@
 			foreach($value as $key2=>$value2){
 				   if (preg_match_all("/gsxx/",$key2)==1){
 				   		$readable = explode("gsxx", $key2);
-				 		$temp_obj-> $readable[1] = $value2[xt];
+
+
+                       	if (is_numeric($value2[xt])) {
+								$temp_obj-> $readable[1] = (float)$value2[xt];
+
+				 		}else{
+				 				$temp_obj-> $readable[1] = $value2[xt];
+
+				 		}
+
+
+
 				   }
 			}
 			array_push($cleaned_json,$temp_obj);
