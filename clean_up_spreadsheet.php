@@ -18,7 +18,7 @@
 				   		$readable = explode("gsxx", $key2);
 
 
-                       	if (is_numeric($value2[xt])) {
+                       				if (is_numeric($value2[xt])) {
 								$temp_obj-> $readable[1] = (float)$value2[xt];
 
 				 		}else{
