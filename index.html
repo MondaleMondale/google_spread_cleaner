@@ -23,11 +23,29 @@
             padding: 0;
              color: white;
            text-align: justify;
+
 /*
            -webkit-text-fill-color: rgba(0, 0, 0, 0);
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
 */
+        }
+        a{
+            color:white;
+/*            text-shadow:   none;*/
+/*            text-decoration: none;*/
+/*
+                -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+*/
+        }
+
+        a:hover{
+/*            color:#e52887;*/
+
+           text-shadow:   -1px .1px 1px rgba(131, 131, 131, 0.89);
+            transition:text-shadow .5s;
         }
         body{
             height: 100vh;
@@ -70,7 +88,7 @@
 
 <body>
     <!--    <div id="textcontainer">-->
-    <h1>Spread sheet to JSON converter</h1>
+    <h1>Spread <a href="https://docs.google.com/spreadsheets/d/1dAdbdqNw2CvwwPpoIsQmMZ5SD_JZ25NwiqgLrZzHL2Y/edit#gid=0" target="_blank">sheet</a> to JSON converter</h1>
     <!--    </div>-->
 <!--    https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php-->
     <div id="formcontainer">
