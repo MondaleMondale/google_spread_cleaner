@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #textcontainer{
+/*
+                   position: absolute;
+            bottom:0;
+
+*/
+        }
+        h1 {
+/*            border: 1px black solid;*/
+/*             text-shadow: 2px 2px rgba(0,0,0,0.48);*/
+         text-shadow:   -1px 4px 11px rgba(131, 131, 131, 0.89);
+            font-family: sans-serif;
+            font-size: 22vh;
+            margin: 0;
+            padding: 0;
+             color: white;
+           text-align: justify;
+/*
+           -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+*/
+        }
+        body{
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+/*            justify-content: center;*/
+
+        }
+        #formcontainer{
+
+/*              top: calc( 50vh  - 40px ); */
+              position: absolute;
+             z-index: 100;
+        }
+        form{
+            background-color: rgba(255, 255, 255, 0.9);
+
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.48);
+
+
+
+        }
+        .resfield{
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            border: 1px solid rgba(0,0,0,.2);
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--    <div id="textcontainer">-->
+    <h1>Spread sheet to JSON converter</h1>
+    <!--    </div>-->
+<!--    https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php-->
+    <div id="formcontainer">
+        <form name="addres" id="addres" method="get" action="clean_up_spreadsheet.php">
+            <span><input type="text" name="id" class="resfield" name="key" value="Enter Google Spread Sheet ID here" /></span>
+            <input type="submit" class="btn" value="Generate JSON" />
+        </form>
+    </div>
+
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>
